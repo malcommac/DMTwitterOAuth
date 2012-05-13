@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9FAD17B155FA7C000E011EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FAD17A155FA7C000E011EC /* UIKit.framework */; };
+		D9FAD17D155FA7C000E011EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FAD17C155FA7C000E011EC /* Foundation.framework */; };
+		D9FAD17F155FA7C000E011EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9FAD17E155FA7C000E011EC /* CoreGraphics.framework */; };
+		D9FAD185155FA7C000E011EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D9FAD183155FA7C000E011EC /* InfoPlist.strings */; };
+		D9FAD187155FA7C000E011EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FAD186155FA7C000E011EC /* main.m */; };
+		D9FAD18B155FA7C000E011EC /* DMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FAD18A155FA7C000E011EC /* DMAppDelegate.m */; };
+		D9FAD18E155FA7C000E011EC /* DMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FAD18D155FA7C000E011EC /* DMViewController.m */; };
+		D9FAD191155FA7C000E011EC /* DMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9FAD18F155FA7C000E011EC /* DMViewController.xib */; };
+		D9FAD1A1155FA81F00E011EC /* DMOAuth.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FAD1A0155FA81F00E011EC /* DMOAuth.m */; };
+		D9FAD1A5155FA9E100E011EC /* NSString+SHA1Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FAD1A4155FA9E100E011EC /* NSString+SHA1Extensions.m */; };
+		D9FAD1AE155FAA9900E011EC /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = D9FAD1AA155FAA9800E011EC /* hmac.c */; };
+		D9FAD1AF155FAA9900E011EC /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = D9FAD1AC155FAA9800E011EC /* sha1.c */; };
+		D9FAD1B3155FAADC00E011EC /* Base64Transcoder.c in Sources */ = {isa = PBXBuildFile; fileRef = D9FAD1B1155FAADC00E011EC /* Base64Transcoder.c */; };
+		D9FAD1B6155FAB7B00E011EC /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FAD1B5155FAB7B00E011EC /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D9FAD1B9155FABE800E011EC /* DMOAuthTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FAD1B8155FABE800E011EC /* DMOAuthTwitter.m */; };
+		D9FAD1C3155FBC2100E011EC /* DMTwitterLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FAD1C1155FBC2100E011EC /* DMTwitterLoginViewController.m */; };
+		D9FAD1C4155FBC2100E011EC /* DMTwitterLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9FAD1C2155FBC2100E011EC /* DMTwitterLoginViewController.xib */; };
+		D9FAD1C7155FC72500E011EC /* DMTwitter.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FAD1C6155FC72500E011EC /* DMTwitter.m */; };
+		D9FAD1D0155FDB2900E011EC /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = D9FAD1CF155FDB2900E011EC /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D9FAD1DF156005D400E011EC /* oauth_bird.png in Resources */ = {isa = PBXBuildFile; fileRef = D9FAD1DE156005D300E011EC /* oauth_bird.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D9FAD176155FA7C000E011EC /* DMTwitterOAuth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DMTwitterOAuth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9FAD17A155FA7C000E011EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D9FAD17C155FA7C000E011EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D9FAD17E155FA7C000E011EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D9FAD182155FA7C000E011EC /* DMTwitterOAuth-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DMTwitterOAuth-Info.plist"; sourceTree = "<group>"; };
+		D9FAD184155FA7C000E011EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D9FAD186155FA7C000E011EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D9FAD188155FA7C000E011EC /* DMTwitterOAuth-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DMTwitterOAuth-Prefix.pch"; sourceTree = "<group>"; };
+		D9FAD189155FA7C000E011EC /* DMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMAppDelegate.h; sourceTree = "<group>"; };
+		D9FAD18A155FA7C000E011EC /* DMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMAppDelegate.m; sourceTree = "<group>"; };
+		D9FAD18C155FA7C000E011EC /* DMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMViewController.h; sourceTree = "<group>"; };
+		D9FAD18D155FA7C000E011EC /* DMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DMViewController.m; sourceTree = "<group>"; };
+		D9FAD190155FA7C000E011EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DMViewController.xib; sourceTree = "<group>"; };
+		D9FAD19F155FA81F00E011EC /* DMOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMOAuth.h; sourceTree = "<group>"; };
+		D9FAD1A0155FA81F00E011EC /* DMOAuth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMOAuth.m; sourceTree = "<group>"; };
+		D9FAD1A3155FA9E100E011EC /* NSString+SHA1Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SHA1Extensions.h"; sourceTree = "<group>"; };
+		D9FAD1A4155FA9E100E011EC /* NSString+SHA1Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SHA1Extensions.m"; sourceTree = "<group>"; };
+		D9FAD1AA155FAA9800E011EC /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		D9FAD1AB155FAA9800E011EC /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		D9FAD1AC155FAA9800E011EC /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		D9FAD1AD155FAA9800E011EC /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		D9FAD1B1155FAADC00E011EC /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		D9FAD1B2155FAADC00E011EC /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		D9FAD1B4155FAB7B00E011EC /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		D9FAD1B5155FAB7B00E011EC /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		D9FAD1B7155FABE800E011EC /* DMOAuthTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMOAuthTwitter.h; sourceTree = "<group>"; };
+		D9FAD1B8155FABE800E011EC /* DMOAuthTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMOAuthTwitter.m; sourceTree = "<group>"; };
+		D9FAD1C0155FBC2100E011EC /* DMTwitterLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTwitterLoginViewController.h; sourceTree = "<group>"; };
+		D9FAD1C1155FBC2100E011EC /* DMTwitterLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTwitterLoginViewController.m; sourceTree = "<group>"; };
+		D9FAD1C2155FBC2100E011EC /* DMTwitterLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DMTwitterLoginViewController.xib; sourceTree = "<group>"; };
+		D9FAD1C5155FC72500E011EC /* DMTwitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DMTwitter.h; sourceTree = "<group>"; };
+		D9FAD1C6155FC72500E011EC /* DMTwitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMTwitter.m; sourceTree = "<group>"; };
+		D9FAD1CD155FD4CE00E011EC /* DMTwitterCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DMTwitterCore.h; sourceTree = "<group>"; };
+		D9FAD1CE155FDB2900E011EC /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		D9FAD1CF155FDB2900E011EC /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		D9FAD1DE156005D300E011EC /* oauth_bird.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = oauth_bird.png; path = ../oauth_bird.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9FAD173155FA7C000E011EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9FAD17B155FA7C000E011EC /* UIKit.framework in Frameworks */,
+				D9FAD17D155FA7C000E011EC /* Foundation.framework in Frameworks */,
+				D9FAD17F155FA7C000E011EC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9FAD16B155FA7C000E011EC = {
+			isa = PBXGroup;
+			children = (
+				D9FAD180155FA7C000E011EC /* DMTwitterOAuth Example */,
+				D9FAD179155FA7C000E011EC /* Frameworks */,
+				D9FAD177155FA7C000E011EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9FAD177155FA7C000E011EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9FAD176155FA7C000E011EC /* DMTwitterOAuth.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9FAD179155FA7C000E011EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D9FAD17A155FA7C000E011EC /* UIKit.framework */,
+				D9FAD17C155FA7C000E011EC /* Foundation.framework */,
+				D9FAD17E155FA7C000E011EC /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9FAD180155FA7C000E011EC /* DMTwitterOAuth Example */ = {
+			isa = PBXGroup;
+			children = (
+				D9FAD189155FA7C000E011EC /* DMAppDelegate.h */,
+				D9FAD18A155FA7C000E011EC /* DMAppDelegate.m */,
+				D9FAD1E01560070C00E011EC /* Main View Controller */,
+				D9FAD1A2155FA82200E011EC /* DMTwitterOAuth Library */,
+				D9FAD181155FA7C000E011EC /* Supporting Files */,
+			);
+			name = "DMTwitterOAuth Example";
+			path = DMTwitterOAuth;
+			sourceTree = "<group>";
+		};
+		D9FAD181155FA7C000E011EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D9FAD1DE156005D300E011EC /* oauth_bird.png */,
+				D9FAD182155FA7C000E011EC /* DMTwitterOAuth-Info.plist */,
+				D9FAD183155FA7C000E011EC /* InfoPlist.strings */,
+				D9FAD186155FA7C000E011EC /* main.m */,
+				D9FAD188155FA7C000E011EC /* DMTwitterOAuth-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D9FAD1A2155FA82200E011EC /* DMTwitterOAuth Library */ = {
+			isa = PBXGroup;
+			children = (
+				D9FAD1CD155FD4CE00E011EC /* DMTwitterCore.h */,
+				D9FAD1C5155FC72500E011EC /* DMTwitter.h */,
+				D9FAD1C6155FC72500E011EC /* DMTwitter.m */,
+				D9FAD1BF155FBBF400E011EC /* Twitter Login UI */,
+				D9FAD1CC155FC80D00E011EC /* Twitter Core Auth */,
+			);
+			name = "DMTwitterOAuth Library";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		D9FAD1A6155FAA3800E011EC /* NSString+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D9FAD1B4155FAB7B00E011EC /* NSString+URLEncoding.h */,
+				D9FAD1B5155FAB7B00E011EC /* NSString+URLEncoding.m */,
+				D9FAD1A3155FA9E100E011EC /* NSString+SHA1Extensions.h */,
+				D9FAD1A4155FA9E100E011EC /* NSString+SHA1Extensions.m */,
+				D9FAD1B0155FAA9E00E011EC /* hmac/sha1/base64 */,
+			);
+			name = "NSString+Extensions";
+			sourceTree = "<group>";
+		};
+		D9FAD1B0155FAA9E00E011EC /* hmac/sha1/base64 */ = {
+			isa = PBXGroup;
+			children = (
+				D9FAD1B1155FAADC00E011EC /* Base64Transcoder.c */,
+				D9FAD1B2155FAADC00E011EC /* Base64Transcoder.h */,
+				D9FAD1AA155FAA9800E011EC /* hmac.c */,
+				D9FAD1AB155FAA9800E011EC /* hmac.h */,
+				D9FAD1AC155FAA9800E011EC /* sha1.c */,
+				D9FAD1AD155FAA9800E011EC /* sha1.h */,
+			);
+			name = hmac/sha1/base64;
+			sourceTree = "<group>";
+		};
+		D9FAD1BA155FABED00E011EC /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				D9FAD19F155FA81F00E011EC /* DMOAuth.h */,
+				D9FAD1A0155FA81F00E011EC /* DMOAuth.m */,
+				D9FAD1A6155FAA3800E011EC /* NSString+Extensions */,
+			);
+			name = OAuth;
+			sourceTree = "<group>";
+		};
+		D9FAD1BF155FBBF400E011EC /* Twitter Login UI */ = {
+			isa = PBXGroup;
+			children = (
+				D9FAD1C0155FBC2100E011EC /* DMTwitterLoginViewController.h */,
+				D9FAD1C1155FBC2100E011EC /* DMTwitterLoginViewController.m */,
+				D9FAD1C2155FBC2100E011EC /* DMTwitterLoginViewController.xib */,
+			);
+			name = "Twitter Login UI";
+			sourceTree = "<group>";
+		};
+		D9FAD1CC155FC80D00E011EC /* Twitter Core Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D9FAD1B7155FABE800E011EC /* DMOAuthTwitter.h */,
+				D9FAD1B8155FABE800E011EC /* DMOAuthTwitter.m */,
+				D9FAD1D1155FDB2E00E011EC /* JSONKit */,
+				D9FAD1BA155FABED00E011EC /* OAuth */,
+			);
+			name = "Twitter Core Auth";
+			sourceTree = "<group>";
+		};
+		D9FAD1D1155FDB2E00E011EC /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				D9FAD1CE155FDB2900E011EC /* JSONKit.h */,
+				D9FAD1CF155FDB2900E011EC /* JSONKit.m */,
+			);
+			name = JSONKit;
+			sourceTree = "<group>";
+		};
+		D9FAD1E01560070C00E011EC /* Main View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D9FAD18C155FA7C000E011EC /* DMViewController.h */,
+				D9FAD18D155FA7C000E011EC /* DMViewController.m */,
+				D9FAD18F155FA7C000E011EC /* DMViewController.xib */,
+			);
+			name = "Main View Controller";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9FAD175155FA7C000E011EC /* DMTwitterOAuth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9FAD194155FA7C000E011EC /* Build configuration list for PBXNativeTarget "DMTwitterOAuth" */;
+			buildPhases = (
+				D9FAD172155FA7C000E011EC /* Sources */,
+				D9FAD173155FA7C000E011EC /* Frameworks */,
+				D9FAD174155FA7C000E011EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DMTwitterOAuth;
+			productName = DMTwitterOAuth;
+			productReference = D9FAD176155FA7C000E011EC /* DMTwitterOAuth.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9FAD16D155FA7C000E011EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DM;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = D9FAD170155FA7C000E011EC /* Build configuration list for PBXProject "DMTwitterOAuth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D9FAD16B155FA7C000E011EC;
+			productRefGroup = D9FAD177155FA7C000E011EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9FAD175155FA7C000E011EC /* DMTwitterOAuth */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9FAD174155FA7C000E011EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9FAD185155FA7C000E011EC /* InfoPlist.strings in Resources */,
+				D9FAD191155FA7C000E011EC /* DMViewController.xib in Resources */,
+				D9FAD1C4155FBC2100E011EC /* DMTwitterLoginViewController.xib in Resources */,
+				D9FAD1DF156005D400E011EC /* oauth_bird.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9FAD172155FA7C000E011EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9FAD187155FA7C000E011EC /* main.m in Sources */,
+				D9FAD18B155FA7C000E011EC /* DMAppDelegate.m in Sources */,
+				D9FAD18E155FA7C000E011EC /* DMViewController.m in Sources */,
+				D9FAD1A1155FA81F00E011EC /* DMOAuth.m in Sources */,
+				D9FAD1A5155FA9E100E011EC /* NSString+SHA1Extensions.m in Sources */,
+				D9FAD1AE155FAA9900E011EC /* hmac.c in Sources */,
+				D9FAD1AF155FAA9900E011EC /* sha1.c in Sources */,
+				D9FAD1B3155FAADC00E011EC /* Base64Transcoder.c in Sources */,
+				D9FAD1B6155FAB7B00E011EC /* NSString+URLEncoding.m in Sources */,
+				D9FAD1B9155FABE800E011EC /* DMOAuthTwitter.m in Sources */,
+				D9FAD1C3155FBC2100E011EC /* DMTwitterLoginViewController.m in Sources */,
+				D9FAD1C7155FC72500E011EC /* DMTwitter.m in Sources */,
+				D9FAD1D0155FDB2900E011EC /* JSONKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D9FAD183155FA7C000E011EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9FAD184155FA7C000E011EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D9FAD18F155FA7C000E011EC /* DMViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9FAD190155FA7C000E011EC /* en */,
+			);
+			name = DMViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9FAD192155FA7C000E011EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D9FAD193155FA7C000E011EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9FAD195155FA7C000E011EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMTwitterOAuth/DMTwitterOAuth-Prefix.pch";
+				INFOPLIST_FILE = "DMTwitterOAuth/DMTwitterOAuth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D9FAD196155FA7C000E011EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DMTwitterOAuth/DMTwitterOAuth-Prefix.pch";
+				INFOPLIST_FILE = "DMTwitterOAuth/DMTwitterOAuth-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9FAD170155FA7C000E011EC /* Build configuration list for PBXProject "DMTwitterOAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9FAD192155FA7C000E011EC /* Debug */,
+				D9FAD193155FA7C000E011EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9FAD194155FA7C000E011EC /* Build configuration list for PBXNativeTarget "DMTwitterOAuth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9FAD195155FA7C000E011EC /* Debug */,
+				D9FAD196155FA7C000E011EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9FAD16D155FA7C000E011EC /* Project object */;
+}
